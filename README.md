@@ -47,14 +47,17 @@ API Endpoints
 
 GET http://localhost:8080/api/users/
 
+
 2. Create new Users
 
 POST http://localhost:8080/api/users/
 payload {"name": "myname"}
 
+
 3. Display all the followers for a given user
 
 GET  http://localhost:8080/api/users/1/relations/
+
 
 4. Follow a friend 
 
@@ -63,9 +66,11 @@ payload {"follower_id":1, "following_id": 5}
 
 User id 1 follow a friend with id 5
 
+
 5. Unfollow the specific friend for a given user
 
 DELETE  http://localhost:8080/api/users/1/relations/?following_id=4
+
 User 1 unfollow the friend with id 4
 
 
