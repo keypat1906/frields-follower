@@ -51,6 +51,7 @@ GET http://localhost:8080/api/users/
 2. Create new Users
 
 POST http://localhost:8080/api/users/
+
 payload {"name": "myname"}
 
 
@@ -62,6 +63,7 @@ GET  http://localhost:8080/api/users/1/relations/
 4. Follow a friend 
 
 POST http://localhost:8080/api/relations/
+
 payload {"follower_id":1, "following_id": 5}
 
 User id 1 follow a friend with id 5
